@@ -10,13 +10,13 @@ void display(struct node **head);
 
 int main(){
 	struct node *list=NULL, *diff=NULL;
+	printf("\n\t Polynomial Differentiation \n");
 	create_poly(&list);
 	display(&list);
 	differentiation(&list,&diff);
 	display(&diff);
 	return 0;
 }
-
 void create_poly(struct node **head){
 	int n,i;
 	struct node *newterm,*temp;
@@ -43,7 +43,6 @@ void create_poly(struct node **head){
 	   }
 	}
 }
-
 void differentiation(struct node **poly,struct node **diff){
 	struct node *temp,*temp1,*newterm;
 	temp1=*poly;
@@ -67,7 +66,6 @@ void differentiation(struct node **poly,struct node **diff){
 	   }
 	  temp1=temp1->next;
 	}
-
 }
 void display(struct node **head){
 	struct node *temp;
