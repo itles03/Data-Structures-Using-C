@@ -68,7 +68,7 @@ void display(struct node **head){
 		}
 }
 
-/* Functiont to remove duplicate nodes in the single linked list*/
+// Functiont to reverse the Doubly Linked List
 void reverse(struct node **head){
 	struct node *temp,*temp1,*duplicate;
 	temp=*head;
